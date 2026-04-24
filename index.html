@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Quintas — Portfólio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Modularizado -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header>
+        <div class="header-inner">
+            <a href="#inicio" class="logo">
+                <img src="https://ui-avatars.com/api/?background=3F6212&color=22D3EE&name=Matheus+Nogueira+Quintas" alt="Logo MQ">
+                <span class="logo-text">Portfólio</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="mainNav">
+                <a href="#sobre">Sobre Mim</a>
+                <a href="#objetivo">Objetivo</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#formacao">Formação</a>
+                <a href="#experiencia">Experiência</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="inicio" class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <span class="hero-badge">🎓 FIAP — ADS 1TDSR</span>
+                <h1>Olá, eu sou<br><span>Matheus Quintas</span></h1>
+                <p>Estudante de Análise e Desenvolvimento de Sistemas com foco em back-end. Apaixonado por tecnologia, construindo projetos reais e buscando minha primeira oportunidade profissional.</p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-outline">Falar Comigo</a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <div class="photo-frame">Sua Foto Aqui</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SOBRE MIM ===================== -->
+    <section id="sobre" class="section">
+        <div class="about">
+            <div>
+                <h2 class="section-title">Sobre Mim</h2>
+                <p class="section-subtitle">Quem eu sou</p>
+                <div class="about-text">
+                    <p>Sou estudante de ADS na FIAP, apaixonado por desenvolvimento back-end e tecnologia em geral. Fora do código, pratico jiu-jítsu (faixa branca 3° grau), treino e jogo muito — hábitos que me ensinaram disciplina e foco.</p>
+                    <p>Estou construindo um portfólio sólido com projetos reais em Node.js, APIs REST, bancos de dados e muito mais, enquanto busco minha primeira oportunidade como estágiário.</p>
+                </div>
+            </div>
+            <div>
+                <ul class="info-list">
+                    <li><strong>Nome</strong> Matheus Nogueira Quintas</li>
+                    <li><strong>RM</strong> 572542</li>
+                    <li><strong>Curso</strong> ADS — FIAP</li>
+                    <li><strong>Turma</strong> 1TDSR</li>
+                    <li><strong>Formatura</strong> Dezembro / 2027</li>
+                    <li><strong>GitHub</strong> MatheusQuintasdev</li>
+                    <li><strong>LinkedIn</strong> matheus-quintass</li>
+                    <li><strong>Foco</strong> Back-end Development</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== OBJETIVO ===================== -->
+    <section id="objetivo" style="background-color: rgba(63,98,18,0.06); padding: var(--space-3xl) var(--space-xl);">
+        <div style="max-width: var(--max-width); margin: 0 auto;">
+            <h2 class="section-title">Objetivo Profissional</h2>
+            <p style="margin-top: var(--space-lg); font-size: var(--font-md); line-height: 1.8; color: #374151; max-width: 720px;">
+                Meu objetivo é conseguir uma oportunidade de estágio na área de desenvolvimento back-end, onde possa aplicar meus conhecimentos em Node.js, APIs REST e banco de dados, ao mesmo tempo em que aprendo com profissionais experientes e contribuo com projetos reais.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <div id="habilidades" class="skills-bg">
+        <div style="max-width: var(--max-width); margin: 0 auto;">
+            <h2 class="section-title">Habilidades</h2>
+            <p class="section-subtitle">Tecnologias que utilizo</p>
+            <div class="skills-grid">
+                <div class="skill-card"><div class="skill-icon">🟨</div><p>JavaScript</p></div>
+                <div class="skill-card"><div class="skill-icon">🟢</div><p>Node.js</p></div>
+                <div class="skill-card"><div class="skill-icon">🚂</div><p>Express</p></div>
+                <div class="skill-card"><div class="skill-icon">🔺</div><p>Prisma ORM</p></div>
+                <div class="skill-card"><div class="skill-icon">🍃</div><p>MongoDB</p></div>
+                <div class="skill-card"><div class="skill-icon">🐘</div><p>PostgreSQL</p></div>
+                <div class="skill-card"><div class="skill-icon">🔐</div><p>JWT / bcrypt</p></div>
+                <div class="skill-card"><div class="skill-icon">🌐</div><p>REST API</p></div>
+                <div class="skill-card"><div class="skill-icon">🐍</div><p>Python</p></div>
+                <div class="skill-card"><div class="skill-icon">☕</div><p>Java</p></div>
+                <div class="skill-card"><div class="skill-icon">🐙</div><p>Git / GitHub</p></div>
+                <div class="skill-card"><div class="skill-icon">🎨</div><p>HTML / CSS</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== FORMAÇÃO ===================== -->
+    <section id="formacao" class="section">
+        <h2 class="section-title">Formação</h2>
+        <p class="section-subtitle">Minha trajetória acadêmica</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="year">2025 — 2027</span>
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <p>FIAP — Faculdade de Informática e Administração Paulista, São Paulo</p>
+            </div>
+            <div class="timeline-item">
+                <span class="year">2022 — 2024</span>
+                <h3>Ensino Médio</h3>
+                <p>Concluído com foco em exatas e introdução à programação</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERIÊNCIA ===================== -->
+    <section id="experiencia" class="section">
+        <h2 class="section-title">Experiência</h2>
+        <p class="section-subtitle">Projetos e processos seletivos</p>
+
+        <!-- Tabela com scroll horizontal em mobile -->
+        <div class="table-wrapper">
+            <table class="exp-table">
+                <thead>
+                    <tr>
+                        <th>Empresa / Projeto</th>
+                        <th>Cargo / Tipo</th>
+                        <th>Período</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PROA.AI / KTech Digital</td>
+                        <td>Candidatura Estágio</td>
+                        <td>2025</td>
+                        <td><span class="badge-status ativo">Ativo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Up.p Fintech</td>
+                        <td>Candidatura Estágio</td>
+                        <td>2025</td>
+                        <td><span class="badge-status ativo">Entrevista</span></td>
+                    </tr>
+                    <tr>
+                        <td>API de Autenticação</td>
+                        <td>Projeto Pessoal — Node.js</td>
+                        <td>2025</td>
+                        <td><span class="badge-status concluido">Concluído</span></td>
+                    </tr>
+                    <tr>
+                        <td>To Do List CRUD API</td>
+                        <td>Projeto Pessoal — Node.js</td>
+                        <td>2025</td>
+                        <td><span class="badge-status concluido">Concluído</span></td>
+                    </tr>
+                    <tr>
+                        <td>Portfólio Web — FIAP</td>
+                        <td>Projeto Acadêmico</td>
+                        <td>2025</td>
+                        <td><span class="badge-status ativo">Em andamento</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ===================== PROJETOS ===================== -->
+    <section id="projetos" class="section">
+        <h2 class="section-title">Projetos</h2>
+        <p class="section-subtitle">O que já construí</p>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="card-header"><span>🔐</span></div>
+                <div class="card-body">
+                    <h3>Auth REST API</h3>
+                    <p>API de autenticação com registro, login, JWT e bcrypt. Banco de dados MongoDB Atlas via Prisma ORM.</p>
+                    <div class="project-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">JWT</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/MatheusQuintasdev" target="_blank">↗ GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-header"><span>✅</span></div>
+                <div class="card-body">
+                    <h3>To Do List API</h3>
+                    <p>CRUD completo de tarefas com Node.js, Express, Prisma ORM e PostgreSQL. Endpoints RESTful organizados.</p>
+                    <div class="project-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Prisma</span>
+                        <span class="tag">REST</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/MatheusQuintasdev" target="_blank">↗ GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-header"><span>🌐</span></div>
+                <div class="card-body">
+                    <h3>Portfólio Web</h3>
+                    <p>Este site! Landing page pessoal desenvolvida com HTML semântico e CSS responsivo como projeto da FIAP.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Responsivo</span>
+                        <span class="tag">FIAP</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/MatheusQuintasdev" target="_blank">↗ GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <div id="contato" class="form-section">
+        <div class="form-wrapper">
+            <h2>Contato</h2>
+            <p class="form-subtitle">Manda um alô! Responderei em breve.</p>
+
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto">
+                        <option value="">Selecione...</option>
+                        <option>Oportunidade de Estágio</option>
+                        <option>Projeto em Conjunto</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+            </div>
+
+            <button type="button" class="form-submit">Enviar Mensagem</button>
+        </div>
+    </div>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-text">Matheus Quintas</span>
+                <p>Estudante de ADS na FIAP, desenvolvedor back-end em formação e sempre buscando aprender algo novo.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="https://github.com/MatheusQuintasdev" target="_blank">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/matheus-quintass" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Matheus Nogueira Quintas — FIAP</p>
+            <span class="rm">RM: 572542</span>
+        </div>
+    </footer>
+
+    <!-- ===================== JS: Menu Mobile ===================== -->
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('mainNav');
+
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('open');
+            nav.classList.toggle('open');
+        });
+
+        // Fecha o menu ao clicar em um link
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                toggle.classList.remove('open');
+                nav.classList.remove('open');
+            });
+        });
+    </script>
+
+</body>
+</html>
