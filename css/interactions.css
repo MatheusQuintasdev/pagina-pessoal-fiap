@@ -1,0 +1,113 @@
+/* ===========================
+   ACCORDION
+   =========================== */
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-top: var(--space-xl);
+    max-width: 720px;
+}
+
+.accordion-item {
+    border: 1px solid #e5e7eb;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.accordion-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md) var(--space-lg);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: var(--font-base);
+    font-weight: 700;
+    color: var(--color-dark);
+    text-align: left;
+    transition: background-color var(--transition);
+}
+
+.accordion-btn:hover {
+    background-color: rgba(63, 98, 18, 0.05);
+}
+
+.accordion-icon {
+    font-size: var(--font-lg);
+    font-weight: 400;
+    color: var(--color-primary);
+    transition: transform var(--transition);
+    flex-shrink: 0;
+}
+
+.accordion-item.open .accordion-icon {
+    transform: rotate(45deg);
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    padding: 0 var(--space-lg);
+}
+
+.accordion-item.open .accordion-body {
+    max-height: 300px;
+    padding: var(--space-md) var(--space-lg) var(--space-lg);
+}
+
+.accordion-body p {
+    font-size: var(--font-sm);
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+/* ===========================
+   BOTÃO VOLTAR AO TOPO
+   =========================== */
+
+#backToTop {
+    position: fixed;
+    bottom: var(--space-xl);
+    right: var(--space-xl);
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-full);
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: none;
+    cursor: pointer;
+    font-size: var(--font-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(12px);
+    transition: opacity var(--transition), transform var(--transition);
+    z-index: 999;
+}
+
+#backToTop.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+#backToTop:hover {
+    background-color: var(--color-primary-dark);
+}
+
+@media (max-width: 480px) {
+    #backToTop {
+        bottom: var(--space-lg);
+        right: var(--space-lg);
+    }
+}

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/interactions.css">
 </head>
 <body>
 
@@ -40,6 +41,7 @@
                 <a href="#formacao">Formação</a>
                 <a href="#experiencia">Experiência</a>
                 <a href="#projetos">Projetos</a>
+                <a href="#faq">FAQ</a>
                 <a href="#contato">Contato</a>
             </nav>
         </div>
@@ -58,7 +60,7 @@
                 </div>
             </div>
             <div class="hero-photo">
-                <img src="{css,img}/eu-profissional.png.png" alt="Matheus Quintas">
+                <img src="img/eu-profissional.png" alt="Matheus Quintas">
             </div>
         </div>
     </section>
@@ -71,7 +73,7 @@
                 <p class="section-subtitle">Quem eu sou</p>
                 <div class="about-text">
                     <p>Sou estudante de ADS na FIAP, apaixonado por desenvolvimento back-end e tecnologia em geral. Fora do código, pratico jiu-jítsu (faixa branca 3° grau), treino e jogo muito — hábitos que me ensinaram disciplina e foco.</p>
-                    <p>Estou construindo um portfólio sólido com projetos reais em Node.js, APIs REST, bancos de dados e muito mais, enquanto busco minha primeira oportunidade como estágiário.</p>
+                    <p>Estou construindo um portfólio sólido com projetos reais em Node.js, APIs REST, bancos de dados e muito mais, enquanto busco minha primeira oportunidade como estagiário.</p>
                 </div>
             </div>
             <div>
@@ -144,7 +146,6 @@
         <h2 class="section-title">Experiência</h2>
         <p class="section-subtitle">Projetos e processos seletivos</p>
 
-        <!-- Tabela com scroll horizontal em mobile -->
         <div class="table-wrapper">
             <table class="exp-table">
                 <thead>
@@ -235,11 +236,11 @@
                 <div class="card-header"><span>🌐</span></div>
                 <div class="card-body">
                     <h3>Portfólio Web</h3>
-                    <p>Este site! Landing page pessoal desenvolvida com HTML semântico e CSS responsivo como projeto da FIAP.</p>
+                    <p>Este site! Landing page pessoal desenvolvida com HTML semântico, CSS responsivo e JavaScript.</p>
                     <div class="project-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
-                        <span class="tag">Responsivo</span>
+                        <span class="tag">JavaScript</span>
                         <span class="tag">FIAP</span>
                     </div>
                     <div class="card-links">
@@ -248,6 +249,54 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <!-- ===================== FAQ — ACCORDION ===================== -->
+    <section id="faq" class="section">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <p class="section-subtitle">Dúvidas comuns sobre mim</p>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                    Você está disponível para estágio?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <p>Sim! Estou ativamente buscando minha primeira oportunidade como estagiário na área de desenvolvimento back-end. Tenho disponibilidade para início imediato.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                    Quais tecnologias você domina?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <p>Trabalho com Node.js, Express, Prisma ORM, MongoDB, PostgreSQL, JWT, bcrypt, Git/GitHub, HTML e CSS. Também tenho conhecimentos em Python e Java pelo curso da FIAP.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                    Você tem projetos no GitHub?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <p>Sim! Tenho uma API de autenticação (Node.js + MongoDB + JWT) e uma To Do List API (Node.js + PostgreSQL) publicadas no GitHub em MatheusQuintasdev.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                    Como entrar em contato?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                    <p>Pelo formulário de contato aqui no site, pelo LinkedIn (matheus-quintass) ou diretamente pelo GitHub (MatheusQuintasdev). Respondo rápido!</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -300,6 +349,7 @@
                     <li><a href="#sobre">Sobre Mim</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
@@ -317,24 +367,11 @@
         </div>
     </footer>
 
-    <!-- ===================== JS: Menu Mobile ===================== -->
-    <script>
-        const toggle = document.getElementById('menuToggle');
-        const nav = document.getElementById('mainNav');
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" aria-label="Voltar ao topo">↑</button>
 
-        toggle.addEventListener('click', () => {
-            toggle.classList.toggle('open');
-            nav.classList.toggle('open');
-        });
-
-        // Fecha o menu ao clicar em um link
-        nav.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                toggle.classList.remove('open');
-                nav.classList.remove('open');
-            });
-        });
-    </script>
+    <!-- JavaScript externo (menu + accordion + voltar ao topo) -->
+    <script src="script.js"></script>
 
 </body>
 </html>
