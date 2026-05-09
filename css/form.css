@@ -105,10 +105,66 @@
     transform: translateY(0);
 }
 
-/* Feedback de validação */
-.form-group input:invalid:not(:placeholder-shown),
-.form-group textarea:invalid:not(:placeholder-shown) {
-    border-color: var(--color-accent);
+/* ===========================
+   VALIDAÇÃO — ERROS
+   =========================== */
+
+.obrigatorio {
+    color: var(--color-accent);
+}
+
+.form-erro {
+    display: none;
+    font-size: var(--font-xs);
+    color: var(--color-accent);
+    margin-top: 2px;
+}
+
+.form-erro::before {
+    content: '⚠ ';
+}
+
+.campo-erro {
+    border-color: var(--color-accent) !important;
+    background-color: rgba(251, 113, 133, 0.05) !important;
+}
+
+/* ===========================
+   MENSAGEM DE SUCESSO
+   =========================== */
+
+.form-sucesso {
+    display: none;
+    max-width: 680px;
+    margin: 0 auto;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border-radius: var(--radius-md);
+    padding: var(--space-3xl) var(--space-2xl);
+    text-align: center;
+}
+
+.sucesso-icone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-full);
+    background-color: rgba(247, 254, 231, 0.2);
+    font-size: var(--font-2xl);
+    margin-bottom: var(--space-lg);
+}
+
+.form-sucesso h3 {
+    font-family: var(--font-heading);
+    font-size: var(--font-xl);
+    margin-bottom: var(--space-sm);
+}
+
+.form-sucesso p {
+    font-size: var(--font-sm);
+    opacity: 0.85;
 }
 
 /* ===========================
