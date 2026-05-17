@@ -83,3 +83,10 @@ Seção de contato com formulário e tabela de experiência.
 - Accordion na seção FAQ com abertura/fechamento suave
 - Botão "Voltar ao topo" fixo que aparece após 400px de scroll
 - JavaScript movido para arquivo externo (`script.js`)
+
+## 🌐 Site Publicado
+
+O portfólio está disponível online em:
+https://matheusquintasdev.github.io/pagina-pessoal-fiap/
+
+Acesse para visualizar o projeto completo!
